@@ -1,0 +1,62 @@
+/* desingning the servives div */
+.services{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+}
+
+/* styling the Awesome text div */
+.awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+/* targeting the span of the of Awesome Div
+    Span 1 
+    */
+.awesome > :nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Span 2 */
+.awesome > :nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+/* Span 3 */
+.awesome >:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+/* Styling the upload Resume button */
+.s-button{
+    width:8rem;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .services{
+      margin-top: 0;
+      flex-direction: column;
+      gap: 5rem;
+      height: 66rem;
+      padding: 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+    .cards>*{
+        position: static;
+    }
+  }
